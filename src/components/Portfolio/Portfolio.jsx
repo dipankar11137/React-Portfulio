@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 import i from '../../img/Project/i.png';
 import h from '../../img/Project/h.png';
-import g from '../../img/Project/g.png';
 import f from '../../img/Project/f.png';
 import e from '../../img/Project/e.png';
 import d from '../../img/Project/d.png';
@@ -18,7 +17,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" id="portfolio">
       {/* heading */}
-      <h1 style={{ color: darkMode ? 'white' : '' }}>Recent Projects</h1>
+      <h1 className="fw-bold" style={{ color: darkMode ? 'white' : '' }}>Recent Projects</h1>
 
       {/* slider */}
       <Swiper
@@ -39,12 +38,7 @@ const Portfolio = () => {
             <a href="https://whimsical-starburst-4da913.netlify.app/" target="_blank" ><button className="button i-button">Live Link</button></a>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
-          <img src={g} alt="" />
-          <div className="text-center mt-2">
-            <a href="https://inspiring-frangollo-44427b.netlify.app/" target="_blank" ><button className="button i-button">Live Link</button></a>
-          </div>
-        </SwiperSlide>
+
         <SwiperSlide>
           <img src={f} alt="" />
           <div className="text-center mt-2">

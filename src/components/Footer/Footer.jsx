@@ -6,15 +6,23 @@ import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
+
+  const today = new Date();
+  const year = today.getFullYear();
+
   return (
     <div className="footer">
       <img className="text-black" src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>Dipankar</span>
+
         <div className="f-icons">
-          <Insta color="white" size={"3rem"} />
-          <Facebook color="white" size={"3rem"} />
-          <Gitub color="white" size={"3rem"} />
+          <a href="https://www.instagram.com/dipankar1234567/" target="_blank"><Insta color="white" size={"3rem"} /></a>
+          <a href="https://www.facebook.com/dipankar.halder2/" target="_blank"><Facebook color="white" size={"3rem"} /></a>
+          <a href="https://github.com/dipankar11137" target="_blank"><Gitub color="white" size={"3rem"} /></a>
+        </div>
+        <div className="copyright-style">
+          <p><small>Copyright &copy; {year}</small></p>
+          <p><small>Develop By Dipankar Halder </small></p>
         </div>
       </div>
     </div>
