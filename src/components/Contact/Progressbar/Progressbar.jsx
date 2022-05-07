@@ -1,7 +1,10 @@
 import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
 
+
 const Progressbar = () => {
+    const myRef = document.querySelector('.scrollable-div')
+    const score = 90;
     const html = 99;
     const css = 96;
     const bootstrap = 95;
@@ -26,6 +29,7 @@ const Progressbar = () => {
             <h1 className='text-center fw-bold '>SOFT SKILL</h1>
 
             <div className=' d-flex w-75 mx-auto'>
+
                 <div className='w-50'>
                     <p>HTML<ProgressBar animated variant="warning" now={html} label={`${html} %`} /></p>
                     <p>CSS<ProgressBar animated variant="success" now={css} label={`${css} %`} /></p>
