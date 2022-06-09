@@ -36,7 +36,7 @@ const Intro = () => {
             and development, producting the Quality work
           </span>
         </div>
-        <div className="bg-success">
+        <div>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button i-button ">Hire me</button>
           </Link>
