@@ -8,7 +8,17 @@ const Contact = () => {
   const form = useRef();
   const [done, setDone] = useState(false)
 
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    emailjs.sendForm('service_7l0b6wf', 'template_w6cjq3x', form.current, 'I7MnbiShkojGLpSOr')
+      .then((result) => {
+        console.log(result.text);
+        setDone(true);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
   return (
     <div className="contact-form" id="contact">
@@ -26,7 +36,7 @@ const Contact = () => {
       </div>
       {/* right side form */}
       <div className="c-right">
-        <form ref={form} >
+        <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" className="user" placeholder="Name" />
           <input type="email" name="user_email" className="user" placeholder="Email" />
           <textarea name="message" className="user" placeholder="Message" />

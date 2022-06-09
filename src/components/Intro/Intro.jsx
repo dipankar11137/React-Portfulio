@@ -14,6 +14,7 @@ import Facebook from "../../img/Facebook.png"
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import Resume from './resume.pdf'
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -35,9 +36,15 @@ const Intro = () => {
             and development, producting the Quality work
           </span>
         </div>
-        <Link to="contact" smooth={true} spy={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
+        <div className="bg-success">
+          <Link to="contact" smooth={true} spy={true}>
+            <button className="button i-button ">Hire me</button>
+          </Link>
+          <a className="ms-3" href={Resume} download>
+            <button className="button s-button">Resume</button>
+          </a>
+        </div>
+
         {/* social icons */}
         <div className="i-icons">
           <a href="https://github.com/dipankar11137" target="_blank"><img src={Github} alt="" /></a>
