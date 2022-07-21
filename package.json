@@ -15,8 +15,10 @@
     "react-animated-progress-bar": "^1.0.4",
     "react-bootstrap": "^2.3.1",
     "react-dom": "^17.0.2",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
-    "react-scroll": "^1.8.6",
+    "react-scroll": "^1.8.7",
     "swiper": "^8.0.7",
     "web-vitals": "^2.1.0"
   },

@@ -15,11 +15,12 @@ const Progressbar = () => {
     const Mongodb = 80;
     const MySql = 75;
     const C = 87;
+    const Node = 77;
     const CPlus = 60;
-    const Java = 70;
-    const Python = 50;
+    const Java = 30;
+    const Python = 40;
     const MSWORD = 89;
-    const MSEXCEL = 70;
+    const MSEXCEL = 85;
     const MSPOWERPOINT = 92;
     const MachineLearning = 66;
     const ArtificialIntelligence = 60;
@@ -44,6 +45,7 @@ const Progressbar = () => {
 
                 </div>
                 <div className='w-50 ms-3'>
+                    <p>Node.js<ProgressBar animated variant="warning" now={Node} label={`${Node} %`} /></p>
                     <p>C ++<ProgressBar animated variant="warning" now={CPlus} label={`${CPlus} %`} /></p>
                     <p>Java<ProgressBar animated variant="danger" now={Java} label={`${Java} %`} /></p>
                     <p>Python<ProgressBar animated variant="success" now={Python} label={`${Python} %`} /></p>

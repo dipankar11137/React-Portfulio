@@ -1,8 +1,13 @@
 import React from "react";
 import Toggle from "../Toggle/Toggle";
+
 import "./Navbar.css";
 import { Link } from "react-scroll";
+
+
+// import { Link } from "react-router-dom";
 const navbar = () => {
+
   return (
     <div className="n-wrapper" id="Navbar">
       {/* left */}
@@ -24,19 +29,25 @@ const navbar = () => {
                 Serivces
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="works" spy={true} smooth={true}>
                 Experience
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link to="portfolio" spy={true} smooth={true}>
-                Protfolio
+                Projects
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="testimonial" spy={true} smooth={true}>
                 Testimonial
+              </Link>
+            </li> */}
+            <li>
+              {/* <button onClick={() => navigate('/blogs')}></button> */}
+              <Link to="/blogs" >
+                Blogs
               </Link>
             </li>
           </ul>
